@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulasi Tower of Hanoi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="judul">
+        <h1>🗼 Simulasi Tower of Hanoi 🗼</h1>
+
+        <p>
+            Pindahkan semua cakram dari tiang A ke tiang B
+            menggunakan tiang C sebagai bantuan.
+        </p>
+
+        <input type="number" id="diskInput" placeholder="Jumlah cakram">
+
+        <button onclick="mulai()">Mulai</button>
+
+        <button onclick="resetGame()">Reset</button>
+    </div>
+
+    <div class="container">
+
+        <div class="tower-container">
+            <div class="tower" id="A">
+                <div class="rod"></div>
+                <div class="base"></div>
+            </div>
+            <h2>A</h2>
+        </div>
+
+        <div class="tower-container">
+            <div class="tower" id="B">
+                <div class="rod"></div>
+                <div class="base"></div>
+            </div>
+            <h2>B</h2>
+        </div>
+
+        <div class="tower-container">
+            <div class="tower" id="C">
+                <div class="rod"></div>
+                <div class="base"></div>
+            </div>
+            <h2>C</h2>
+        </div>
+
+    </div>
+
+    <div class="info">
+
+        <div class="card">
+            <h3>📌 Aturan</h3>
+
+            <p>1. Hanya satu cakram yang boleh dipindahkan dalam satu waktu.</p>
+
+            <p>2. Cakram besar tidak boleh di letakkan di atas cakram kecil.</p>
+        </div>
+
+        <div class="card">
+            <h3>📊 Informasi</h3>
+
+            <p id="langkah">Jumlah langkah : 0</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
